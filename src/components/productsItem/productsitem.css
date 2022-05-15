@@ -1,0 +1,39 @@
+.p-box{
+width: 30%;    cursor: pointer;
+}
+h5{
+    cursor: pointer;
+  
+}
+
+.product-button{
+   list-style-type: none;
+}
+.product-prise{
+  padding: auto;
+}
+.e-box{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+}
+.e-left-box{
+    display: flex;
+    margin-left:205px;
+    width: 60%;
+}
+.e-left{
+    display: flex;
+    flex-direction: column;
+}
+.e-image{
+    margin-right: 25px;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 80px;
+    
+}
+.e-right-image{
+    width: 650px;
+    height: 500px;
+}

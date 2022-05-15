@@ -1,0 +1,28 @@
+
+.h-box{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+
+}
+.h-left{
+    width: 70%;
+}
+.h-right{
+    width: 30%;
+}
+ul{
+  
+    display: flex;
+    margin-left: 175px; 
+    margin-bottom: 32px;
+    
+}
+.h-li{
+
+    list-style:none;
+    font-size: 20px;
+    padding-right: 32px;
+
+}

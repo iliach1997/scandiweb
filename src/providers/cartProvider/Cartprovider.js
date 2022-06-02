@@ -6,67 +6,187 @@ export const CartContext=createContext({
 });
 CartContext.displayName='CartProvider';
 export const Cartprovider=({children})=>{
-    const [cart,setcart]= useLocalStorage('supper-app,',{total:0,items:{}})
-    const [item,setitem]= useLocalStorage('supper,',{items:{}})
+    const [cart,setcart]= useLocalStorage('supper-12211,',{total:0,total_price:0,items:{},sizes:''})
+    const [item,setitem]= useLocalStorage('supper1113333,',{items:{}})
+    const [Size,setSize]= useLocalStorage('Size1,',{sizes:''})
+    const [color,setcolor]= useLocalStorage('colors,',{colors:{}})  
+    const [mony,setmony]= useLocalStorage('monys,',{items:{}})  
+
     const It=(products)=>{
+     
+     console.log(products)
         setitem((prev)=>{
             let newItem;
+            
             if(prev.items[products.id]){
+            
                 const card=prev.items[products.id]
+                 
+              
                 newItem={
                     card,
+                  
                     price:products.price,
                     name:products.name,
                     url:products.url,
-                 
+                    XS:products.XS,
+                    S:products.S,
+                    M:products.M,
+                    L:products.L,
+                   
                 }
+            
             }
             else{
+                 
                 newItem={
+              
                     price:products.price,
                     name:products.name,
                     url:products.url,
+                    XS:products.XS,
+                    S:products.S,
+                    M:products.M,
+                    L:products.L,
+                  
                 }
             }
             return{
-               
+                
                 items:{
-                    
+                   
                     [products.id]:newItem
                 }
             }
         })
-       
-       
-    }
-   
-       const addNewItem=(products)=>{
-        setcart((prev)=>{
+    
+    } 
+    const Itmony=(products)=>{
+     
+        console.log(products, 'ilo')
+           setmony((prev)=>{
                let newItem;
+               
                if(prev.items[products.id]){
+               
                    const card=prev.items[products.id]
+                  
+                 
+                   newItem={ 
+                       card,
+                       url:products.url,
+ 
+                   }
+                    
+               
+               }
+               else{
+                    
+                   newItem={
+                    url:products.url,
+                      
+                     
+                   }
+               }
+               return{
+                   
+                items:{
+                      
+                       [products.id]:newItem
+                   }
+               }
+           })
+       
+       } 
+    const addColor=(color)=>{
+        setcolor(()=>{
+            return{
+                colors:color
+            }
+        })
+    }
+
+       const addSize=(size)=>{
+        
+        setSize(()=>{
+           
+            return{
+            sizes:size
+            }
+        })
+    
+    }
+
+     
+       const addNewItem=(products)=>{
+        
+        setcart((prev)=>{
+               
+      
+                
+                let newItem; 
+              
+               if(prev.items[products.id]){
+                  
+                   const card=prev.items[products.id]
+                
+                    
                    newItem={
                        ...card,
                        price:products.price,
                        name:products.name,
                        url:products.url,
-                       qty:card.qty+1
-                   }
-               }
+                       qty:card.qty+1,
+                       XS:products.XS,
+                       S:products.S,
+                       M:products.M,
+                       L:products.L,
+                       siz:Size.sizes
+                     
+                       
+                    
+                      
+                   } 
+               } 
+               
+             
+     
+               
+            
                else{
+              
                    newItem={
+                        
+                      
                        price:products.price,
                        name:products.name,
                        url:products.url,
                        qty:1,
+                       XS:products.XS,
+                       S:products.S,
+                       M:products.M,
+                       L:products.L,
+                       siz:Size.sizes
+                      
                    }
+                  
+                
                }
-               return{
-                   total:prev.total+products.price,
-                   items:{
+               
+               return{ 
+                     
+                total_price:prev.total_price+products.price,
+                   total:prev.total+1,
+                  
+                   items:{ 
+                  
                        ...cart.items,
+                        
                        [products.id]:newItem
-                   }
+                       
+
+                   },  
+                  
                }
            })
           
@@ -76,6 +196,7 @@ export const Cartprovider=({children})=>{
      setcart((prev)=>{
          let newItem={...prev.items};
          let total=prev.total;
+         let total_price=prev.total_price;
          if(prev.items[prodact.id]){
              const cartProduct=prev.items[prodact.id];
              if(cartProduct.qty>1){
@@ -86,11 +207,13 @@ export const Cartprovider=({children})=>{
                  qty:cartProduct.qty-1}
                  
              }
-           total-=prodact.price;
+           total-=1;
+           total_price-=prodact.price;
     }
     
     else{
-        total-=prodact.price
+        total_price-=prodact.price;
+        total-=1
         delete newItem[prodact.id]
     }
 
@@ -98,6 +221,7 @@ export const Cartprovider=({children})=>{
         
          return{
              ...prev,
+             total_price,
              total,
              items:newItem
          }
@@ -105,7 +229,7 @@ export const Cartprovider=({children})=>{
 
       }
     return(
-        <CartContext.Provider value={{cart,addNewItem,removeItem,It,item}}>{children}</CartContext.Provider>
+        <CartContext.Provider value={{cart,Itmony,addColor,addNewItem,addSize,removeItem,Size,It,item,color,mony}}>{children}</CartContext.Provider>
     )
 } 
 export const useCart=()=>{

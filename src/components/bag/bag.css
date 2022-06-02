@@ -1,0 +1,174 @@
+.beg-mom{
+
+    display: flex;
+  
+    width: 100%;
+    height: 100%;
+
+    
+  
+
+}
+.lrft-box{
+
+margin-left: 10px;
+}
+
+.b-proice-box{
+    display: flex;
+}
+.b-mony{
+    height: 15px;
+    width: 15px;
+    margin-right: 7px;
+}
+.b-name{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.h-price{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.b-size-name{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+.bag-img{
+  
+   width: 112px;
+   height: 125px;
+   margin-left: 15px;
+}
+.b-button-size{
+    display: flex;
+
+}
+.button-xs-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    background-color: #FFFFFF;
+}
+.button-s-b{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    background-color: #FFFFFF;
+}
+.button-m-b{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    background-color: #FFFFFF;
+}
+.button-l-b{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    color: black;
+    background-color: #FFFFFF;
+}
+.button-xs1-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    margin-bottom: 2px;
+    cursor:nesw-resize;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    transition: all 1s ease;
+}
+.button-s1-b{
+    margin-right: 12px;
+    margin-bottom: 2px;
+    cursor:nesw-resize;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    transition: all 1s ease;
+}
+.button-l1-b{
+    margin-right: 12px;
+    margin-bottom: 2px;
+    cursor:nesw-resize;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    transition: all 1s ease;
+}
+.button-m1-b{
+    margin-right: 12px;
+    margin-bottom: 2px;
+    cursor:nesw-resize;
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    transition: all 1s ease;
+}
+.h-color{
+    font-size: 10px;
+}
+.b-button-color{
+    display: flex;
+ 
+}
+.b-colorwheat{
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    background-color: #D3D2D5;
+   
+}
+.b-colorblack{
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    background-color: black;
+}
+.b-colorgreen{
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    background-color: #0F6450;
+}
+
+/* right-box */
+
+.right-box{
+    display: flex;
+    margin-left: 20px;
+
+}
+.b-add{
+    display: flex;
+    flex-direction: column;
+}
+.b-add-box{
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+   margin-top: 0;
+}
+.b-remov-box{
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+    margin-top: 31px;
+}
+.b-qty{
+    margin-top: 24px;
+    
+}

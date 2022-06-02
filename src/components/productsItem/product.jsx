@@ -2,7 +2,7 @@
 
 import { NavLink } from "react-router-dom"
 import { Button } from "../../atom/button/Button"
-
+import { Monyscreen } from "../mony"
 import { useCart } from "../../providers/cartProvider"
 import styled from "styled-components"
 import icon from '../../image/Vector.png'
@@ -51,25 +51,21 @@ const Circel=styled.div`
 `
 export const Product=({prodact})=>{
   const {It}=useCart();
+ 
     return(
-     
+
      <Container>
       <Image src={prodact.url}/>
       <Box>
-    
       <Circel/>
-
-      <Info>  
+      <Info> 
       <Icon>
-       <NavLink to='/'><Button className="product-Button" onClick={()=>It(prodact)}><img src={icon} alt="icon"/></Button></NavLink>
-
+       <NavLink to='/'><Button className="product-button" onClick={()=>It(prodact)}><img src={icon} alt="icon"/></Button></NavLink>
       </Icon>
       </Info>
       </Box>
       <h5 className="product-name">{prodact.name}</h5>
-      <h6 className="product-prise">{prodact.price}</h6>
+      <h6 className="product-prise"><Monyscreen/> {prodact.price} </h6>
      </Container>
-      
-
-    )
+  )
 }

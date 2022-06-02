@@ -4,57 +4,67 @@
         "price":50,
         "id":1,
         "url":"/img/Product D.png",
-        "sizes":[{
-            "id":1,
-            "size":"XS"  
-        }, 
-        {
-            "id":2,
-            "size":"S"  
-        },
-        {
-            "id":3,
-            "size":"M"  
-        },
-        {
-            "id":4,
-            "size":"L"  
-        }
-    ]
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
+
     },
     {
         "name":"Apollo Running Short",
         "price":50,
         "id":2,
-        "url":"img/Product B.png"
-      
+        "url":"img/Product B.png",
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
+     
     },
     {
         "name":"Apollo Running Short",
         "price":50,
         "id":3,
-        "url":"img/Product C.png"
+        "url":"img/Product C.png",
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
       
     },
     {
         "name":"Apollo Running Short",
         "price":50,
         "id":4,
-        "url":"img/Product A.png"
+        "url":"img/Product A.png",
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
       
     },
     {
         "name":"Apollo Running Short",
         "price":50,
         "id":5,
-        "url":"img/Product D.png"
+        "url":"img/Product D.png",
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
       
     },
     {
         "name":"Apollo Running Short",
         "price":50,
         "id":6,
-        "url":"img/Product C.png"
+        "url":"img/Product C.png",
+        "XS":"XS",
+        "S":"S",
+        "M":"M",
+        "L":"L"
       
     }
+
 ]
+

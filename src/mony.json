@@ -1,0 +1,19 @@
+
+[
+    {
+        "id":1,
+        "name":"USD",
+        "url":"img/dollar.png"
+    },
+    {
+        "id":2,
+        "name":"EUR",
+        "url":"img/euro.png"  
+    },
+    {
+        "id":3,
+        "name":"JPY",
+        "url":"img/jpy.png"
+    }
+
+]

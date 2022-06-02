@@ -2,6 +2,7 @@
 import styled from "styled-components"
 import { Product } from "./product"
 import Data  from "../../products.json"
+
 const Container=styled.div`
 display: flex;
 flex-wrap: wrap;
@@ -15,15 +16,18 @@ const Category=styled.div`
     font-size: 46px;
 
 `
-export const Products=()=>{
+
+export const Products=()=>{   
+      
     return(
         <>
         <Category>
         Category name
         </Category>
         <Container>
+  
         {Data.map((item,index)=>(
-               <Product prodact={item} key={index}/>   
+               <Product prodact={item} key={index} />   
         ))} 
         </Container>
         </>

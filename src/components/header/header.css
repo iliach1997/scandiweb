@@ -1,28 +1,282 @@
 
 .h-box{
+
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 160px;
     width: 100%;
 
 }
-.h-left{
-    width: 70%;
+.h-left-box{
+    width: 60%;
 }
-.h-right{
-    width: 30%;
+.h-right-box{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 ul{
   
     display: flex;
+    align-items: center;
+    list-style-type: none;
     margin-left: 175px; 
     margin-bottom: 32px;
     
 }
 .h-li{
-
+     text-decoration: none;
     list-style:none;
+    font-weight: 400;
     font-size: 20px;
     padding-right: 32px;
 
 }
+.logo{
+    margin-left: 600px;
+}
+li{
+    list-style: none;
+ 
+}
+
+
+
+
+
+.h-mony{
+flex-direction: column;
+width: 114px;
+margin-top: 65px;
+height: 109px;
+
+
+
+}
+.h-cart{
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+.h-div-mony{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 169px;
+width: 114px;
+margin-top: 220px;
+
+}
+
+.h-div-mony-none{
+    display: none;
+}
+.h-div-mony{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    z-index: 111;
+    top:-150px;
+    left: 400px;
+   
+   
+
+}
+
+.open{
+width: 20px;
+height: 20px;
+position: absolute;
+z-index: 9;
+left: 504px;
+cursor: pointer;
+}
+.mony-bag{
+    width: 20px;
+height: 20px;
+position: absolute;
+z-index: 9;
+left: 480px;
+}
+
+/* h-cart-img style */
+.h-cart-img{
+width: 20px;
+height: 20px;
+position: absolute;
+z-index: 19;
+left: 544px;
+top:33px
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+width: 20px;
+height: 20px;
+position: absolute;
+top: 22px;
+left: 559px;
+z-index: 2323;
+background-color:black;
+color: white;
+
+}
+
+
+
+/* bag style */
+
+.beg-mom-none{
+    display: none;
+}
+.h-item-div{
+    padding-top: 15px;
+    padding-left: 10px;
+    position: absolute;
+    background-color: white;
+    width: 324px;
+    height: 60px;
+    top:60px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.bag-span{
+    font-size: 18px;
+    font-weight: 700;
+}
+ .beg-mom{
+    position: absolute;
+    display: flex;
+    padding-bottom: 10px;
+    width: 334px;
+    height: 130px;
+    background-color: white;
+    top: 120px;
+    left: 230px;
+    z-index: 3;
+
+}
+.beg-mom:nth-child(2){
+    position: absolute;
+    display: flex;
+    
+    width: 334px;
+    height: 130px;
+    background-color: white;
+    top: 250px;
+    left: 230px;
+}
+.beg-mom:nth-child(3){
+    position: absolute;
+    display: flex;
+
+    width: 334px;
+    height: 130px;
+    background-color:white;
+    top: 380px;
+    left: 230px;
+}
+.beg-mom:nth-child(4){
+    position: absolute;
+    display: flex;
+   
+    width: 334px;
+    height: 130px;
+    background-color:white;
+    top: 510px;
+    left: 230px;
+}
+.beg-mom:nth-child(5){
+    position: absolute;
+    display: flex;
+
+    width: 334px;
+    height: 130px;
+    background-color:white;
+    top: 640px;
+    left: 230px;
+}
+.beg-mom:nth-child(6){
+    position: absolute;
+    display: flex;
+
+    width: 334px;
+    height: 130px;
+    background-color:white;
+    top: 770px;
+    left: 230px;
+}
+
+
+.button-b{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 334px;
+    height: 161px;
+    background-color: white;
+    top: 900px;
+    left: 230px;
+    
+}
+.total-box{
+    display: flex;
+   
+    width: 334px;
+
+}
+.total-bag{
+    margin-left:22px ;
+    margin-right: 207px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.total_price{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+}
+.b-view{
+    width: 140px;
+    height: 43px;
+    margin-right: 5px;
+    background-color: white;
+
+   
+}
+.b-check{
+    width: 140px;
+    height: 43px;
+     margin-left: 5px;
+     background-color:#5ECE7B;
+     color: black;
+}
+.beg-mom-box{
+    z-index: 23;
+    background-color: white;
+    border-style: solid ;
+    border-color: #5ECE7B;
+    height: 1000px;
+    width: 334px;
+    margin-top: 1038px;
+    margin-left: 12px;
+}
+
